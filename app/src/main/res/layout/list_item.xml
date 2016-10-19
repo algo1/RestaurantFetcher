@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:elevation="4dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <ImageView
+            android:padding="4dp"
+            android:src="@drawable/swiggy"
+            android:id="@+id/restroImg"
+            android:layout_width="130dp"
+            android:layout_height="130dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/restroName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/restroImg"
+            android:layout_toRightOf="@id/restroImg"
+            android:hint="Restro Name"
+            android:textColor="#9A9A9A"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/cuisine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restroName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/restroImg"
+            android:hint="Cuisine"
+            android:textColor="#9A9A9A"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/cuisine"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/restroImg"
+            android:background="#F7F7F7" />
+
+        <LinearLayout
+            android:id="@+id/detailsCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/restroImg"
+            android:layout_toRightOf="@id/restroImg"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/restroBudget"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="$$$$"
+                android:textColor="#9A9A9A"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/restroRating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="2.5"
+                android:textColor="#9A9A9A"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/etaDelivery"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="N/A"
+                android:textColor="#9A9A9A"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/long_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/restroImg"
+            android:layout_margin="8dp"
+            android:layout_marginTop="25dp"
+            android:background="#F9F9F9" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/nextOpeningMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restroImg"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:hint="Opens next at HH am, today"
+            android:textColorHint="#F29C37"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/long_separator1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/nextOpeningMsg"
+            android:layout_margin="8dp"
+            android:layout_marginTop="5dp"
+            android:background="#F9F9F9" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/outletInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/long_separator1"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="x outlets around you"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
